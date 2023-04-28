@@ -11,7 +11,6 @@ from livestream import gen_frames
 from faces import known_cface_encodings, known_cface_names, known_mface_encodings, known_mface_names
 
 
-
 app = Flask(__name__)
 app.secret_key = 'abc'
 
@@ -240,4 +239,4 @@ def videotest(filename):
 
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run(host="0.0.0.0",port=80,debug = True)
